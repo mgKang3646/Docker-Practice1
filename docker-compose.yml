@@ -12,10 +12,8 @@ services:
       - ./h2/:/opt/h2-data # host 서버와 연결되는 통로 ( 저장 및 백업 경로 )
     restart: always # 컨테이너 종료시 자동 재실행
   app:
-    build:
-      context: . # Dockerfile 위치
-      dockerfile: Dockerfile # Docker 파일 이름
     container_name: spring-app # 컨테이너 이름
+    image: lordofkangs/spring_app:latest # spring_app 이미지
     ports: # 포트포워딩
       - 5000:8080 # HTTP 포트 연결
     environment: # spring app 설정
