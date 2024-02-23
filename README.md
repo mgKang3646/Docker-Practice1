@@ -1,7 +1,4 @@
-# Groom_Practice1
-
-
-Docker 실습과제1 ( 9/21~9/22 )
+# Docker-Practice
 
 - 도커 이미지 빌드하기
 
